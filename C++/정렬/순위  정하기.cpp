@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include<algorithm>
 #define M 1010
-using namespace std;
 
 // 최대 정수는 1000 이하 이므로 넉넉하게 1010으로 지정
 int a[M], r[M];
