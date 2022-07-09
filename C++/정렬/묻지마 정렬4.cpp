@@ -1,3 +1,7 @@
+/*
+다현
+*/
+
 #include <stdio.h>
 #include <algorithm> // 내장함수(sort) 정보가 여기 있음
 using namespace std;
@@ -16,7 +20,7 @@ int chk(temp i, temp j)
 {
 	return (i.c < j.c) // 첫번째 조건
 		|| (i.a == j.a && i.a%2==1 && i.b < j.b) // 같은 반이고 홀수 반이면서 오름차순일 경우 교체
-		|| (i.a == j.a && i.a%2==2 && i.b > j.b); // 같은 반이고 짝수 반이면서 내림차순일 경우 교체
+		|| (i.a == j.a && i.a%2==0 && i.b > j.b); // 같은 반이고 짝수 반이면서 내림차순일 경우 교체
 }
 int main() 
 {	
