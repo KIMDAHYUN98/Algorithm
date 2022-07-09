@@ -6,7 +6,7 @@ struct temp
 // temp 자료형을 생성
 {
 	int a, b;
-} k[M];// 정의와 동시에 선언
+} k[M], t;// 정의와 동시에 선언
 
 // struct temp k[10]; => k라는 변수를 10개 생성
 
@@ -33,7 +33,7 @@ int main()
 	}
 	for(i=0; i<n; i++)
 	{
-		printf("%d %d\n", a[i], b[i]);
+		printf("%d %d\n", k[i].a, k[i].b);
 	}
 
 	return 0;
