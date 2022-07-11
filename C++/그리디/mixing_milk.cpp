@@ -1,6 +1,3 @@
-/*
-다현
-*/
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 int p[1010], a[1010];
@@ -27,7 +24,7 @@ int main() {
         for (j = i + 1; j < m; j++)
         {
             if (p[i] > p[j])
-            {   
+            {
                 t1 = p[i];
                 p[i] = p[j];
                 p[j] = t1;
@@ -39,36 +36,26 @@ int main() {
         }
     }
 
-    for (i = 0; i < m; i++)
-    {
-        printf("%d %d\n", p[i], a[i]);
-    }
-
     // 3-2. 선택 정렬 후 사야할 우유양에 차례대로 각 기업이
     // 가지고 있는 우유양을 뺀다
-
-    // n = 100 이라고 가정했을 경우
 
     for (i = 0; i < m; i++)
     {
         if (n > a[i])
         {
             // 100 - 10 ...
-            n -= a[i];
+           
             sum += p[i] * a[i];
+            n -= a[i];
         }
         else
-        { // n < a[i] || 40 < 80
-            // k = a[i] - n; || k = 80 - 40
-            // sum += k * p[i]; || sum += 40 * 8;
-           
-            k = a[i] - n;
-            sum += k * p[i];
+        { 
+            sum += n * p[i];
             break;
         }
     }
 
     // 4. 출력
-    printf("\n%d", sum);
+    printf("%d", sum);
     return 0;
 }
