@@ -2,10 +2,7 @@
 
 int main_mM()
 {
-	int a, max=0, min=0, i, t1, t2, t=0;
-
-	// t1 : 최댓값 저장하는 임시변수
-	// t2 : 최솟값 저장하는 임시변수
+	int a, max=0, min=0, i, t=0;
 
 	for (i = 0; i < 7; i++)
 	{
