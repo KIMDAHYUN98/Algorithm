@@ -4,7 +4,7 @@
 int map[M][M], qx[M * M], qy[M * M], via[M][M];
 int zx[4] = { 1, -1, 0, 0 }, zy[4] = { 0, 0, 1, -1 };
 
-int main()
+int main_2178()
 {
 	int n, m, x, y, st, ed, i, j;
 	scanf("%d%d", &n, &m);
