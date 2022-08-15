@@ -12,7 +12,7 @@ int main_pir()
 
 	for (i = 0; i < 20; i++)
 	{
-		for (j = i+1; j < 20; j++)
+		for (j = i + 1; j < 20; j++)
 		{
 			if (a[i] > a[j])
 			{
