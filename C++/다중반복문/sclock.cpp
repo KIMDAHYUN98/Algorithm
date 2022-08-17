@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 int main_sclock()
 {
 	int i, j, n;
