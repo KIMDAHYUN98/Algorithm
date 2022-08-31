@@ -1,29 +1,25 @@
 #include<stdio.h>
 
-int main()
+int k[1001];
+int main_distinct()
 {
-	int i, n, cnt=0;
-
-	int k[1001];
+	int i, n, m, cnt=0;
 
 	// 1. 입력
 	scanf("%d", &n);
 
 	// 1-1. 반복문을 통해 배열에 n 만큼 숫자 입력
-	
 	for (i = 1; i <= n; i++)
 	{
-		scanf("%d", &k[i]);
+		scanf("%d", &m);
+		// k[m]에 1 대입
+		k[m] = 1;
 	}
 
 	// 2. 비교
-	// 1   2   3   4    5   6   7   8   9  10
-	// [1] [1] [1] [1] [ ] [ ] [ ] [ ] [ ] [ ]
-	// if문을 통해 배열에 1이 있을 경우 cnt 하나씩 증가
-	for (i = 1; i <= n; i++)
+	// 만약 k[i] 값이 1일 경우 cnt 증가
+	for (i = 1; i <= 1001; i++)
 	{
-		if (k[?] == i)
-			k[i] = 1;
 		if (k[i] == 1)
 			cnt++;
 	}
