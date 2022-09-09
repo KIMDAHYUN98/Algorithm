@@ -2,7 +2,7 @@
 int n[201], start[201], end[201], sum[201];
 
 int main()
-{
+{ 
 	int i, j, a, q;
 
 	scanf("%d", &a);
